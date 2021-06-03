@@ -13,9 +13,9 @@ local TABLE = {
 }
 local banned = false
 for i, plr2 in pairs(TABLE.RemoteBans) do
-  if plr2.Name == _G.Player.Name then
+  if plr2.Name == plr.Name then
     banned = true
-    _G.Player:Kick("Reason: ".. plr2.Reason)
+    plr:Kick("Reason: ".. plr2.Reason)
   end
 end
 if banned = false then
