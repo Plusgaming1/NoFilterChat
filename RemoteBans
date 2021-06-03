@@ -1,3 +1,4 @@
+print("Hi")
 local TABLE = {
   RemoteBans = {
     [1] = {
