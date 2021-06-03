@@ -1,0 +1,10 @@
+local module = {
+  RemoteBans = {
+    [1] = {
+      Name = "Dominique011415";
+      Reason = "Insulting Riley";
+    }
+  }
+}
+
+return module
