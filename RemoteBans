@@ -1,4 +1,4 @@
-local module = {
+local TABLE = {
   RemoteBans = {
     [1] = {
       Name = "Dominique011415";
@@ -7,4 +7,9 @@ local module = {
   }
 }
 
-return module
+local banned = false
+for i, plr2 in pairs(TABLE.RemoteBans) do
+  if plr2.Name == _G.Player.Name then
+    _G.Player:Kick("Reason: ".. plr2.Reason)
+  end
+end
